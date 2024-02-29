@@ -64,6 +64,9 @@ fun App() {
                 style = MaterialTheme.typography.body1,
                 textAlign = TextAlign.Start,
             )
+            AdBannerView(
+                modifier = Modifier.fillMaxSize()
+            )
         }
     }
 }

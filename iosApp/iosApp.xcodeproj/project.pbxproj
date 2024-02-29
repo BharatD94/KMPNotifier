@@ -14,6 +14,7 @@
 		A679C56D2B02DAAC008F0522 /* FirebaseMessaging in Frameworks */ = {isa = PBXBuildFile; productRef = A679C56C2B02DAAC008F0522 /* FirebaseMessaging */; };
 		A679C5792B02E1F1008F0522 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A679C5782B02E1F1008F0522 /* GoogleService-Info.plist */; };
 		A6EDE9F12B02C93F00DACEA2 /* FirebaseMessaging in Frameworks */ = {isa = PBXBuildFile; productRef = A6EDE9F02B02C93F00DACEA2 /* FirebaseMessaging */; };
+		C2F446942B90FF3000B7CC4A /* GoogleMobileAds in Frameworks */ = {isa = PBXBuildFile; productRef = C2F446932B90FF3000B7CC4A /* GoogleMobileAds */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -45,6 +46,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C2F446942B90FF3000B7CC4A /* GoogleMobileAds in Frameworks */,
 				A679C56D2B02DAAC008F0522 /* FirebaseMessaging in Frameworks */,
 				A6EDE9F12B02C93F00DACEA2 /* FirebaseMessaging in Frameworks */,
 			);
@@ -120,6 +122,7 @@
 			packageProductDependencies = (
 				A6EDE9F02B02C93F00DACEA2 /* FirebaseMessaging */,
 				A679C56C2B02DAAC008F0522 /* FirebaseMessaging */,
+				C2F446932B90FF3000B7CC4A /* GoogleMobileAds */,
 			);
 			productName = iosApp;
 			productReference = 7555FF7B242A565900829871 /* iosApp.app */;
@@ -151,6 +154,7 @@
 			mainGroup = 7555FF72242A565900829871;
 			packageReferences = (
 				A6EDE9C52B02C93F00DACEA2 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				C2F446922B90FF3000B7CC4A /* XCRemoteSwiftPackageReference "swift-package-manager-google-mobile-ads" */,
 			);
 			productRefGroup = 7555FF7C242A565900829871 /* Products */;
 			projectDirPath = "";
@@ -417,6 +421,14 @@
 				minimumVersion = 10.17.0;
 			};
 		};
+		C2F446922B90FF3000B7CC4A /* XCRemoteSwiftPackageReference "swift-package-manager-google-mobile-ads" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/googleads/swift-package-manager-google-mobile-ads.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 11.0.1;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -429,6 +441,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = A6EDE9C52B02C93F00DACEA2 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = FirebaseMessaging;
+		};
+		C2F446932B90FF3000B7CC4A /* GoogleMobileAds */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C2F446922B90FF3000B7CC4A /* XCRemoteSwiftPackageReference "swift-package-manager-google-mobile-ads" */;
+			productName = GoogleMobileAds;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

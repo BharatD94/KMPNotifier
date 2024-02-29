@@ -30,6 +30,7 @@ kotlin {
         }
         noPodspec()
         pod("FirebaseMessaging")
+        pod("GoogleMobileAds")
     }
 
 
